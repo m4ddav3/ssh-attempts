@@ -25,6 +25,6 @@ The rule is at position 3 on my RPi, because rules 1 and 2 short circuit establi
 The script which processes the pcap file will be released shortly.
 
 Still some work to do:
-- [ ] Get the lat/lon coords right
+- [X] Get the lat/lon coords right
 - [ ] Add the script and instructions which drive the data
 - [ ] Expand to account for other access attemps (HTTP/S, etc)
