@@ -11,8 +11,7 @@ Display SSH attempts on my RPi by geographical region. It uses iptables and ulog
  - NetPacket
  - Net::TcpDumpLog
  - JSON
-
--GeoIP City Edition DB (normally installed as GeoIpCity.dat)
+- GeoIP City Edition DB (normally installed as GeoIpCity.dat)
 
 ## Setup
 I use the following command to add a rule to `iptables`:
