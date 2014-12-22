@@ -20,7 +20,7 @@ Most of these are available via your favourite package manager
 
 ## Setup
 
-`ulogd`
+#### `ulogd`
 
 Check that the pcap module is being used by ulogd, by looking at `/etc/ulogd.conf`. You may need to add or uncomment the following line:
 `plugin="/usr/lib/ulogd/ulogd_PCAP.so"`
@@ -30,7 +30,7 @@ The `[PCAP]` section will tell you where the log file is going to be written. Ta
 Restart ulogd
 `sudo /etc/init.d/ulogd restart`
 
-`iptables`
+#### `iptables`
 
 I use the following command to add a rule to my existing `iptables` config:
 
@@ -49,7 +49,13 @@ Once your machine has had a number of attempts on it, the log file should have s
 You may have to use a different location for the logfile depending on your setup, refer to the file location that you noted from the ulogd step.
 The output of the script is csv delimited lines for each log entry. I redirect this to a file to record/use another time.
 
-Still some work to do:
+## Todo
 - [X] Get the lat/lon coords right
 - [X] Add the script and instructions which drive the data
 - [X] Expand to account for other access attemps (HTTP/S, etc)
+- [ ] Config file
+- [ ] CLI options
+
+## References
+
+http://www.stearns.org/doc/iptables-ulog.v0.1.html
